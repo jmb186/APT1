@@ -4,10 +4,10 @@ public class DNAMaxNucleotide {
 		int maxNuc=0;
 		String theStrand = "";
         for(int k=0;k<strands.length;k++) {
-        	char[] singleStrand = strands[k].toCharArray();
+        	String[] singleStrand = strands[k].split("");
         	int numNuc=0;
-        	for (char x:singleStrand) {
-        		if (Character.toString(x).equals(nuc)) {
+        	for (String x:singleStrand) {
+        		if (x.equals(nuc)) {
         			numNuc += 1;
         		}
         	}
